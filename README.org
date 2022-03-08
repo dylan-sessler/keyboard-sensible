@@ -1,1 +1,276 @@
-# keyboard-sensible
+* keyboard-sensible
+** Project goal
+A keyboard is a one way interface between a human and computer. It's the main
+tool with which we're able to upload our thoughts and carry out commands with
+the machines we work with for hours each day. When trying to compare different
+solutions to this problem, I can think of two axes with which we can evaluate:
+
+1. Bandwidth
+2. Ergonomics
+
+*** Bandwidth
+To optimize bandwidth, we should be seeking to minmize the amount of time that
+it takes to go from having a thought or desire -> that thought or desire being
+executed or recorded in the computing environment. This is a multi-faceted
+problem that incorporates aspects of the computing environment as well as the
+hardware with which we interface. Ignoring all the improvements that could be
+made by making computing environment changes like using more efficient text
+editors or writing scripts to automate mundane, repetitive tasks, and just
+focusing on the hardware that we interact with (going to call this a keyboard
+from now on) I think there are two important considerations.
+
+1. Input speed
+2. Accuracy
+
+If you were going to model the effectiveness of a person using a keyboard it
+would probably look something like effectiveness = inputSpeed * accuracy^2 as
+mistakes in input can lead to very disruptive pauses in flow where you have to
+perform a dexterity check in order to correct the mistake or re-do the work that
+was lost.
+
+Fortunately, both of these factors are able to be improved greatly by making the
+same underlying adjustment to the keyboard. Reduce the distance traveled by your
+fingers while typing. It's faster and more accurate to actuate your finger to
+press a key on the home row with your finger already on it than it is to raise
+your whole hand off the home row, travel a couple inches, and use your weakest
+finger (the pinky) to press a control or escape key.
+
+In addition to just raw amount of input per period of time, it's important to
+also think about the impact that increasing or decreasing bandwidth has on your
+ability to think complexly. Imagine an extremely poor input system, in which you
+could only enter one character per second, it was difficult to do so and
+required your full attention to do it correctly, and was an error prone process
+that required constantly fixing mistakes. Not only would it take you longer to
+input your thoughts into this system, but your very ability to think complexly
+would be degraded by the amount of mental bandwidth that was being consumed by
+the input task.
+
+For a more relevant example, read some of your recent text messages sent on your
+phone versus emails sent on your computer. On the computer, people will
+typically write more complete sentences, use less abbreviations, and will opt
+for more long-form prose. This is because there's a lot more friction to
+composing a complex, long message using a keyboard with only two fingers
+compared to one in which you can use ten and get tactile feedback.
+
+I want to avoid going too deep into how brains work, but a good takeaway from
+this is that by increasing your bandwidth for inputting data into a computer,
+you not only get the ability to get more done per unit of time, but you unlock
+the ability to do higher quality work based on having more free thought
+cycles. It's an exponential increase in productive output rather than just a
+linear one.
+*** Ergonomics
+The other aspect to consider when evaluating solutions for an optimal keyboard
+are the ergonomics. We spend a lot of time interacting with these devices, so
+it's really important to make sure that our bodies are put into a healthy
+posture to avoid chronic pain.
+
+Regarding a keyboard, there are two main ergonomic problems we are trying to
+avoid: Carpal tunnel and upper back / neck pain. And typically the way we avoid
+them long term is by working in a neutral posture, which is the
+position of the body that places the least stress on the musculoskeletal system
+while still allowing for maximum control and strength. This generally looks like
+opposing muscle groups having balanced tension in the body and the joints being
+near the middle of their range of motion.
+** Optimizations
+*** Ortholinear keyboard
+An ortholinear keyboard is a keyboard with an ortholinear layout, meaning
+straight and straight, where the keys are aligned with each other like the image
+below.
+
+[[./images/ortholinear-keyboard.png]]
+
+As you can see, the key switches are stacked directly on top of one
+another. This is drastically different for a normal staggered keyboard.
+
+[[./images/staggered-keyboard.png]]
+
+The reason most keyboards are staggered is a relic [[https://chscommunicator.com/59441/opinion/2018/02/why-are-we-still-typing-on-staggered-key-keyboards/][from the days of type writers]]
+with mechanical arms needed to have room in order to mechanically actuate and
+stamp a letter on a page.
+
+Having a staggered keyboard increases the travel distance required between
+keys. It require the same vertical translation as an ortholinear keyboard, while
+also requiring a horizontal translation. Less travel distance = less wear and
+tear on your joints as well as faster inputs and greater accuracy.
+
+I like this quote from the zsa.io website on the topic, "Because when you extend
+a finger, it doesn‘t go sideways."
+*** Non-QWERTY keyboard layout
+Keeping with our principle of moving your fingers less = faster input speeds and
+better accuracy, we can now look at the actual location of each key on the
+keyboard. Not all 26 letters of the english language, other symbols, modifiers,
+and meta-characters are used in equal amounts. Based on a [[https://normanlayout.info/compare.html][quick study]] of letter
+use frequency in a few texts, we find the following order of usage:
+
+~etaoinsr hd lcumfpygwbvkxjqz~
+( common <--------> uncommon )
+
+The top 8 letters (etaoinsr) accounted for 63% of all letters typed.
+
+In addition, not all locations on a keyboard are equally fast and easy to
+press. See the image below for a scoring of the difficulty to press each key
+(may vary by hand-size):
+
+[[./images/beakl-keyboard-effort-grid.png]]
+
+A simple method of optimizing a keyboard layout is to put all the most
+frequently used keys in the lowest effort locations and put the least frequently
+used keys in the highest effort locations. To find a truly optimal keyboard
+layout there's more to consider - eg. preserving ctrl+c, ctrl+v, etc., how
+common the most common bigrams (combinations of two letters) occur, how hard it
+is to transition from qwerty, etc, but this provides us with a pretty good basis
+to go about evaluating keyboard layouts.
+
+You can build a pretty close to optimal keyboard layout with any of the popular
+optimized layouts - eg. Dvorvak, colemn, workman, etc, but my recommendation is
+to use my slightly modified variant of [[https://normanlayout.info/compare.html][norman]]. It performs just about as good as
+the other optimized layouts while preserving the important ctrl+z - ctrl+v
+bottom left part of the keyboard and striving to keep qwerty keys on the same
+finger whenever possible to ease the learning transition.
+
+> Using the Workman key cap scores, Norman's score is 46% less than QWERTY's. If
+  you prefer finger travel metrics, Norman has 44% less distance travel from the
+  home row than QWERTY.
+*** Never leave the homerow
+We've already established that: In order to be maximizing bandwidth we want to
+have fingers traveling as short of distances as possible to enter inputs. The
+best way to do this is to just not use any key that isn't readily accesible from
+the home row. And of those 30 keys that are readily accessible from the home
+row, only use the easiest to use ones.
+
+To minimize the travel even further, we can minmize the amount of keys on the
+keyboard. There are 26 letters in the alphabet, so why have any more than 26
+keys? Using the 26 most efficient keys according to our effort grid from above
+we get the following layout:
+
+[[./images/keyboard-effort-26.png]]
+
+Starting with these 26 key locations as our constraint, we can develop what is
+pretty close to if not actually the optimal keyboard layout for both bandwidth
+and ergonomics.
+
+~But Dylan, we need more than 26 keys! What about punctuation?~
+
+For that my friends, we have *layers*. As you can see in the image below, I have
+a secondary layer in which each of the 26 alphabet keys have been replaced with
+symbols on the left side or a num pad on the right.
+
+[[./images/layer-2.png]]
+
+Now, if we just had a couple more keys we could input instructions for layer
+switching - eg. alternating between keys inputting a letter of the alphabet or a
+symbol / number!
+
+In addition to the 26 keys that are readily accessible with the non-thumb
+fingers, the moonlander also provides many thumb switches. I find that about
+three on each hand are very easy to reach (kind of like home-row accessible but
+for your thumbs) to give us a total of 32 keys. 26 for the alphabet, and 6 for
+other common keys like space bar and return, as well as layer switching.
+
+[[./images/thumb-switches.png]]
+
+Now even with those thumb switches we still don't have enough to comfortably
+implement the 4 major modifier keys - super (windows), ctrl, alt, shift, the
+space bar, delete, backspace, tab, and layer switching for 2 additional
+layers. To squeeze out just a few more inputs into our optimized for bandwidth
+and comfort 32 key layout, we can make use of a feature that allows key presses
+to do different things when tapped versus held! Eg. if I tap the 'f' key on my
+keyboard on the first layer I get an 'f' character. If I hold the 'f' key on my
+keyboard on the first layer I get a control character that can be paired with
+one or more other keys to enter a modified command!
+
+By making good use of layers and tap vs. held inputs, we can get a lot of bang
+for our buck out of our 32 keys and implement whatever keys you find on even the
+largest and most complex keyboards all without ever leaving the home row!
+
+**** Downsides
+Layers and held vs. tapped keys are amazing in that they allow us to pack all
+the inputs we could every want in a 32 key keyboard that allows us to stay on
+the most efficient part of the home row. However, they do come with some costs
+that are important to keep in mind to prevent you from going crazy with
+implementing them.
+
+For layers, adding a layer switch command adds a key-stroke to entering in
+commands on the non-default (alphabet) layer. Eg. for me to enter in the string
+'(hello)' I would hold my layer switch, hit the '(' key, release my layer
+switch, type 'hello', hold my layer switch, hit the ')' key. So it adds two more
+keystrokes, which is a cost. The gain is that you no longer have to leave the
+home row (which also takes time to travel), and that you don't have the accuracy
+loss of leaving the home row and returning.
+
+For tapped vs. held key commands the cost is that you need to execute a tap
+vs. hold reliably according to the threshold you set for switching from a tap to
+a held input. In the tools I use, this setting is called the "tapping term" and
+I have mine set to 165ms.
+
+You don't want to have to slow down unnecessarily whenever you run a held
+command, but you also don't want to accidentally input a held command when you
+meant to just tap. Finding the right tapping term for you takes some time, and
+it's something that you'll likely start out slower and then speed up as your
+typing speed increases. For this reason, you only want to use split vs. held
+keys on key locations that aren't the most commonly used (like the top 8 that
+should be on or near your homerow or the spacebar). It takes a good amount of
+practice to get this down, but you'll eventually develop a keystroke cadence
+that minimizes the occurrance of errors.
+
+While tapped vs. held settings do slightly increase the chance for error while
+interacting with those keys, it is mostly offset by the travel errors you would
+get from needing to leave the home row. In my set-up, the only tapped vs. held
+keys are the three modifier keys ctrl, shift, and alt, and I believe I run into
+less errors from making a tapped vs. held timing mistake than I would having to
+leave the home row. Not to mention the time saving in reduction in travel and
+the reduced likelihood of repetitive strain injury due to having to constantly
+reach out with the left pinky for control and shift.
+*** Split keyboard
+In order for our back to be in a neutral posture while using a keyboard, the
+keyboard needs to be split so that we can position each forearm at the right
+angle for our bodies, as oposed to the locked 45° angle that is standard when
+working with a keyboard that you can't position the two halves wherever you
+want.
+
+From the zsa website, "Place each half exactly where you need it. Typing at
+shoulder width keeps your chest open, which leads to a more relaxed posture."
+*** TODO Able to evolve to meet your changing needs
+*** Wrist positioning
+Drop your hands to your sides, shake your arms out a bit, and then bend your
+elbows brining your forearm 90° with your upper arm. This is a neutral posture
+for your wrists and is very comfortable. Now rotate your wrists so that your
+palms are down like you're typing on a keyboard. Can you feel the increase in
+tension on the outsides of your wrist? Play around with these two positions for
+a bit to get a good feel for it.
+
+If you're like most humans, the palm down orientation is much more tense and
+uncomfortable. Fortunately, keyboards don't have to be flat. This feature is
+called tenting, and can bring you closer to a more neutral wrist posture while typing.
+
+[[./images/tenting.png]]
+
+The other aspect of wrist positioning is where your wrist is vertically reletive
+to the keyboard. Ideally, you want your wrist to be just above the keys so that
+you can maintain a neutral posture instead of flexing or extending your wrist
+for long periods of time. Using a wrist-rest can acccomplish this.
+
+[[./images/neutral-wrists.png]]
+*** Portability
+One drawback of implementing a highly custom keyboard layout like this is that
+once you get used to it, it's going to be really hard for you to use a computer
+without it. This means that your set-up needs to be lightweight and able to
+travel with you wherever you go.
+
+In addition to portability concerns, having switches that you can use in public
+without being too distracting is important as well. For a good mix of solid
+mechanical tactile feedback and clear actuaion points without being obnoxiously
+loud the cherry MX browns are a great choice.
+** Hardware
+** Firmware
+*** Setting customiztions
+**** Notes on key choices
+**** Tapping term
+**** Oneshot timeout
+** Downsides
+
+** Beginner instructions
+** Future work
+*** Cheaper hardware
+*** Keyboard apron
+*** Full mouse elimination
